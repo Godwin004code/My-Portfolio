@@ -1,0 +1,53 @@
+.web {
+    animation-name: grow;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 1000ms;
+    animation-fill-mode: backwards;
+    font-size: 50px;
+}
+.web:nth-child(1) {
+    animation-delay: 100ms;
+}
+
+.web:nth-child(2) {
+    animation-delay: 200ms;
+}
+.web:nth-child(3) {
+    animation-delay: 300ms;
+}
+.web:nth-child(4) {
+    animation-delay: 400ms;
+}
+.web:nth-child(5) {
+    animation-delay: 500ms;
+}
+.web:nth-child(6) {
+    animation-delay: 600ms;
+}
+.web:nth-child(7) {
+    animation-delay: 700ms;
+}
+.web:nth-child(8) {
+    animation-delay: 800ms;
+    
+}
+.web:nth-child(9) {
+    animation-delay: 900ms;
+    
+}
+.web:nth-child(10) {
+    animation-delay: 1000ms;
+    
+}
+
+
+
+
+
+
+@keyframes grow {
+    0% {
+        opacity: 0;
+    }
+}
