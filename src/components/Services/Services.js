@@ -22,7 +22,7 @@ const Services = () => {
         <FaTablet />
         </div>
         <Typography style={{borderTop: '1px solid white', paddingTop: 5}}>
-        With great layout skill, I build websites that will always be adaptive to your device screen.
+        With great layout skill, I build websites that are adaptive to your device screen. The websites or web app I build accessible websites that look great on any screen. 
         </Typography>
         </div>
         <div className='service'>
@@ -30,7 +30,7 @@ const Services = () => {
         <FaTools />
         </div>
         <Typography style={{borderTop: '1px solid white', paddingTop: 5}}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, beatae sit ducimus repellendus odio, amet doloremque, quas perspiciatis magni quod ab quia? Nemo delectus fuga vitae eos modi perferendis pariatur.
+        I work on-time and to spec, I pay attention to improve the aesthetics of the site as well as the functionality. I am responsive, and willing to wotk through issues as they arise.
         </Typography>
         </div>
         <div className='service'>
@@ -38,7 +38,7 @@ const Services = () => {
         <FaTools />
         </div>
         <Typography style={{borderTop: '1px solid white', paddingTop: 5}}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, beatae sit ducimus repellendus odio, amet doloremque, quas perspiciatis magni quod ab quia? Nemo delectus fuga vitae eos modi perferendis pariatur.
+        I build fast, desktop-first websites that clearly communicates with visitors. 
         </Typography>
         </div>
     </div>

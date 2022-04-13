@@ -29,7 +29,7 @@ const About = () => {
           <Grid className={classes.body}>
             <Typography variant='body1' style={{textAlign: 'center', marginBottom: 8}} >
 
-            I'm <span>Alugbin Boluwatife Godwin</span>, a front-end developer, I am passionate about using my little skills to create delightful experiences.
+            I'm <span>Alugbin Boluwatife Godwin</span>, a front-end developer, I am passionate about using my little skills to create delightful experiences. I'm currently studying Computer Science at University of Ibadan.
             </Typography>
             <Typography variant='body1' style={{textAlign: 'center', marginBottom: 8}}>
 

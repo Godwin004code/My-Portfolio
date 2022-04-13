@@ -19,10 +19,10 @@ const Footer = () => {
     <div>
       <List>
         <ListItem>
-          <span><Mail /></span>godwinalugbin004@gmail.com
+          <span style={{marginRight: 5}}><Mail /></span>godwinalugbin004@gmail.com
         </ListItem>
         <ListItem>
-          <span><LocationCity /></span>33, Orisunbare street, Itamerin-Tioya, Ibadan, Oyo, Nigeria
+          <span style={{marginRight: 5}}><LocationCity /></span>33, Orisunbare street, Itamerin-Tioya, Ibadan, Oyo, Nigeria
         </ListItem>
         </List>
     </div>

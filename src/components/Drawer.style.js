@@ -25,7 +25,8 @@ export const useStyle = makeStyles((theme) => {
        listitem: {
            textAlign: 'center',
            lineHeight: '5',
-           cursor: 'pointer'
+           cursor: 'pointer',
+           fontFamily: 'Monospace'
        }
     }
 })

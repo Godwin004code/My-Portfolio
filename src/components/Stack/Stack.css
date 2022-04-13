@@ -1,0 +1,40 @@
+#stack {
+    animation-name: wild;
+    animation-timing-function: ease-out;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+
+}
+
+#stack:nth-child(1) {
+    animation-delay: 200ms;
+}
+#stack:nth-child(2) {
+    animation-delay: 400ms;
+}
+#stack:nth-child(3) {
+    animation-delay: 600ms;
+}
+#stack:nth-child(4) {
+    animation-delay: 800ms;
+}
+#stack:nth-child(5) {
+    animation-delay: 1000ms;
+}
+#stack:nth-child(6) {
+    animation-delay: 1200ms;
+}
+#stack:nth-child(7) {
+    animation-delay: 1400ms;
+}
+#stack:nth-child(8) {
+    animation-delay: 1600ms;
+}
+
+
+@keyframes wild {
+    0% {
+        transform: scale(0);
+    }
+}

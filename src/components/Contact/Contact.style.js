@@ -17,6 +17,7 @@ export const useStyle = makeStyles(theme => {
             
         },
         grid_container: {
+            zIndex: '10000',
             width: '100%',
             margin: '0rem auto 1rem auto',
             position: 'absolute',
@@ -50,6 +51,22 @@ export const useStyle = makeStyles(theme => {
                 padding: theme.spacing(3),
                 left: 0
              }
+        },
+        error: {
+            background: 'red',
+            color: 'white',
+            textAlign: 'center',
+            margin: '.5rem 0',
+            
+            padding: '.5rem 0',
+            fontSize: '15px',
+            position: 'absolute',
+            zIndex: '1000000',
+            top:'-19%',
+            [theme.breakpoints.down('sm')]: {
+                top: '2%',
+                width: '90%'
+            }
         }
     }
 })

@@ -10,8 +10,9 @@ export const useStyle = makeStyles(theme => {
             justifyContent: 'space-between',
             [theme.breakpoints.down('sm')]: {
                 flexDirection: 'column'
-            }
-            
+            },
+            fontFamily: 'monospace',
+            zIndex: '1200000000'  
         },
         
     }

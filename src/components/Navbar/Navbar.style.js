@@ -12,7 +12,8 @@ export const useStyle = makeStyles(theme => {
             padding: '.6rem 0',
             [theme.breakpoints.down('sm')]: {
                 padding: '1rem 0'
-            }
+            },
+            
         },
         h4: {
             [theme.breakpoints.down('sm')]: {
@@ -23,7 +24,8 @@ export const useStyle = makeStyles(theme => {
             width: '40%',
             display: 'flex',
             justifyContent: 'space-between',
-            cursor: 'pointer'
+            cursor: 'pointer',
+            fontFamily: 'monospace'
         },
         icon_container: {
             //width: '25%',

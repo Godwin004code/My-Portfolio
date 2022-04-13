@@ -28,7 +28,7 @@ const Hero = () => {
                     web.map((item, idx) => {
                         return (
                             
-                            <Typography style={{marginRight: 4}} className={'web' + ' ' +  idx}>{item}</Typography>
+                            <Typography key={idx} style={{marginRight: 4}} className={'web' + ' ' +  idx}>{item}</Typography>
                            
                         )
                     })

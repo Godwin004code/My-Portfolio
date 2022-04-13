@@ -12,6 +12,17 @@ html:root {
     --docsearch-footer-background: unset;
     --docsearch-modal-background: #0A1929;
 } 
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat'), url('./Assets/Montserrat/Montserrat-VariableFont_wght.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Montaga';
+    src: url('./Assets/Montaga/Montaga-Regular.ttf') format('ttf');
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -21,8 +32,40 @@ body {
     background-color: rgb(0, 30, 60);
     width: 100%;
     overflow-x: hidden;
+    
 }
 
 #hide::-webkit-scrollbar {
     width: 0;
+}
+
+input, button {
+    font-family: 'Montaga';
+}
+
+.line {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    animation-name: line;
+    animation-duration: 2000ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    transform-origin: left;
+    margin-top: 10px;
+}
+@keyframes line {
+    0% {
+        transform: scaleX(0);
+    }
+}
+
+#drawer {
+    font-family: 'Montserrat';
+}
+
+@media only screen and (max-width: 500px) {
+    #appbar {
+        font-size: 15px;
+    }
 }

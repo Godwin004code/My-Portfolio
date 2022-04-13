@@ -2,19 +2,16 @@ import { Button, Grid, TextField, Typography } from '@material-ui/core'
 import React, { useState, useRef } from 'react'
 import { useStyle } from './Contact.style'
 import { Element } from "react-scroll"
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet"
-import "leaflet/dist/leaflet.css"
+import "../../index.css"
 
 const Contact = () => {
     const classes = useStyle()
-     const position = [51.505, -0.09]
-     const [center, setCenter] = useState({lat: 51.505, lng: -0.09})
-     const ZOOM_LEVEL = 9;
      
      const [name, setName] = useState('')
      const [email, setEmail] = useState('')
      const [mes, setMes] = useState('')
-
+     const [error, setError] = useState(false)
+     
      const nameHandler = (e) => {
         setName(e.target.value)
      }
@@ -23,10 +20,26 @@ const Contact = () => {
      }
      const mesHandler = (e) => {
         setMes(e.target.value)
+        console.log(mes)
      }
+   
+     const submitHandler = (e) => {
+         e.preventDefault()
+         
+         if(name === '' || email === '' || mes === '') {
+            setError(true)
 
-     const submitHandler = () => {
-        console.log(name, email, mes)
+            setTimeout(() => {
+                setError(false)
+            }, 2000)
+
+            return
+         } else {
+            console.log(name, email, mes)
+         }
+       
+        
+        console.log(123)
      }
   return (
     <Element name="contact">
@@ -34,7 +47,11 @@ const Contact = () => {
         <div className={classes.text}>
             <form className={classes.form} onSubmit={submitHandler}>
                 <div>
-                    <Typography variant='h4' style={{textAlign: 'center'}}>Send a mail</Typography>
+                { error && <div className={classes.error}>
+                    <p style={{padding: '0 .1rem', fontFamily: 'sans-serif', fontSize: '14px'}}>Please make sure all input fields are field.</p>
+                    <div className='line'></div>
+                    </div>}
+                    <Typography variant='h4' style={{textAlign: 'center'}}>Send me mail</Typography>
                     <TextField className={classes.input} fullWidth  label='Name' variant='outlined'  value={name} onChange={nameHandler}  />
                    </div>
                    <div>
@@ -44,7 +61,8 @@ const Contact = () => {
                 <div>
                     <TextField label='Message'  fullWidth className={classes.input} type='message' variant='outlined' value={mes} onChange={mesHandler} />
                 </div>
-                <Button variant="outlined" className={classes.btn}>Send</Button>
+                <Button type='submit' variant="outlined" className={classes.btn}>Send</Button>
+                
             </form>
         </div>
         
