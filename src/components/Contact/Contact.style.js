@@ -5,31 +5,32 @@ export const useStyle = makeStyles(theme => {
         input: {
             backgroundColor: '#6F7E8C',
             borderRadius: '5px',
-            margin: '0 0 1.8rem 0',
-            
+            margin: '0 0 1rem 0',
+            width: '100%',
             '&:focus': {
                 backgroundColor: 'red'
             },
             [theme.breakpoints.down('sm')]: {
                 width: '100%',
+               
                 
-            }
-            
+            },
+            zIndex: 2000000000
         },
         grid_container: {
             zIndex: '10000',
             width: '100%',
-            margin: '0rem auto 1rem auto',
+            margin: '0rem auto 0rem auto',
             position: 'absolute',
             bottom: '100%',
-            right: 0,
+            right: '0%',
             [theme.breakpoints.down('sm')]: {
-               backgroundColor: '#0a1929',
+              
                color: 'white',
                width: '100%',
-               right: '5%',
+              
                padding: theme.spacing(3),
-               height: '400px'
+               padding: '.5rem 0',
             }
 
         },
@@ -39,17 +40,16 @@ export const useStyle = makeStyles(theme => {
             border: '2px solid #fff',
             color: 'white'
         },
-        mapcontainer: {
-            width: '500px',
-            height:'500px'
-        },
+        
         form: {
+            width: '100%',
+            
             [theme.breakpoints.down('sm')]: {
-                
                 width: '100%',
-                position: 'absolute',
+                
                 padding: theme.spacing(3),
-                left: 0
+                backgroundColor: '#0a1929',
+               
              }
         },
         error: {
@@ -60,9 +60,9 @@ export const useStyle = makeStyles(theme => {
             
             padding: '.5rem 0',
             fontSize: '15px',
-            position: 'absolute',
+            borderRadius: '8px',
             zIndex: '1000000',
-            top:'-19%',
+            
             [theme.breakpoints.down('sm')]: {
                 top: '2%',
                 width: '90%'

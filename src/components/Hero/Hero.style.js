@@ -52,9 +52,10 @@ export const useStyle = makeStyles(theme => {
         },
         comment: {
             position: 'fixed',
-            bottom: '1%',
+            top: '70%',
             width: '100%',
-            zIndex: 100
+            zIndex: 100,
+           
         },
         commentIcon: {
             fontSize: '20px',

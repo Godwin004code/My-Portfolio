@@ -1,32 +1,33 @@
-import { Button, Grid, TextField, Typography } from '@material-ui/core'
+import { Button, Grid, TextField, Typography} from '@material-ui/core'
 import React, { useState, useRef } from 'react'
 import { useStyle } from './Contact.style'
 import { Element } from "react-scroll"
 import "../../index.css"
+import emailjs from "@emailjs/browser"
+import Swal from 'sweetalert2'
 
 const Contact = () => {
     const classes = useStyle()
      
-     const [name, setName] = useState('')
+    
      const [email, setEmail] = useState('')
      const [mes, setMes] = useState('')
      const [error, setError] = useState(false)
      
-     const nameHandler = (e) => {
-        setName(e.target.value)
-     }
+     const form = useRef()
+   
      const emailHandler = (e) => {
         setEmail(e.target.value)
      }
      const mesHandler = (e) => {
         setMes(e.target.value)
-        console.log(mes)
+        
      }
    
      const submitHandler = (e) => {
          e.preventDefault()
          
-         if(name === '' || email === '' || mes === '') {
+         if( email === '' || mes === '') {
             setError(true)
 
             setTimeout(() => {
@@ -35,31 +36,46 @@ const Contact = () => {
 
             return
          } else {
-            console.log(name, email, mes)
+           
+
+            emailjs.sendForm('service_bquzkdk', 'template_j8qjvsl', form.current,'SaKsUWe14ryr1EYV_')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+           Swal.fire({
+               title: 'I have received your message, Thank You',
+               icon: 'success'
+           })
+
+           setEmail("")
+           setMes("")
          }
        
         
-        console.log(123)
      }
   return (
     <Element name="contact">
     <Grid container className={classes.grid_container}>
         <div className={classes.text}>
-            <form className={classes.form} onSubmit={submitHandler}>
-                <div>
+            <form className={classes.form} ref={form} onSubmit={submitHandler}>
+                <div> 
                 { error && <div className={classes.error}>
-                    <p style={{padding: '0 .1rem', fontFamily: 'sans-serif', fontSize: '14px'}}>Please make sure all input fields are field.</p>
+                     <p style={{padding: '0 .1rem', fontFamily: 'sans-serif', fontSize: '14px'}}>Input Field is empty
+                     </p>  
+                      
                     <div className='line'></div>
                     </div>}
+                    {/* <div onClick={closeForm()}>X</div> */}
                     <Typography variant='h4' style={{textAlign: 'center'}}>Send me mail</Typography>
-                    <TextField className={classes.input} fullWidth  label='Name' variant='outlined'  value={name} onChange={nameHandler}  />
                    </div>
                    <div>
                
-                    <TextField type='email' fullWidth className={classes.input} label='Email' variant='outlined' value={email} onChange={emailHandler}  />
+                    <TextField type='email' fullWidth className={classes.input} label='Email' variant='outlined' name='email' value={email} onChange={emailHandler}  />
                 </div>
                 <div>
-                    <TextField label='Message'  fullWidth className={classes.input} type='message' variant='outlined' value={mes} onChange={mesHandler} />
+                    <TextField label='Message'  fullWidth className={classes.input} type='message' variant='outlined' name='mes' value={mes} onChange={mesHandler} />
                 </div>
                 <Button type='submit' variant="outlined" className={classes.btn}>Send</Button>
                 

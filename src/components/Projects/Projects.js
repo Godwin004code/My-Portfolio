@@ -23,10 +23,16 @@ const Projects = () => {
                        <div>
                        <div className={classes.icons}>
                        <span>
-                       <Link />
+                           <a style={{color: 'white'}} href={item.net}>
+                           <Link />
+                           </a>
+                       
                        </span>
                        <span>
+                       <a style={{color: 'white'}} href={item.git}>
                        <GitHub />
+                       </a>
+                       
                        </span>
                        </div>
                            <Typography variant='h6' style={{textAlign: 'center', color: 'white'}}>{item.title}</Typography>

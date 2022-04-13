@@ -1,15 +1,20 @@
 import { Typography } from '@material-ui/core'
-import React from 'react'
+import React, {useEffect } from 'react'
 import { FaTools, FaCode, FaTablet } from "react-icons/fa"
 import "./Services.css"
-
+import Aos from "aos"
+import "aos/dist/aos.css"
 
 const Services = () => {
+
+  useEffect(() => {
+    Aos.init({duration: 2000})
+  }, [])
   return (
     <>
     <h2 style={{textAlign:'center', color: 'white'}}>Godwin.render(</h2>
     <div className="service-container">
-        <div className='service'>
+        <div data-aos='fade-in' className='service'>
         <div className='tool first'>
         <FaCode />
         </div>
@@ -17,7 +22,7 @@ const Services = () => {
         I develop websites with HTML, CSS and JavaScript or JS frameworks like React with CSS-in-JS tool like Material UI with the aim of achieving best result.
         </Typography>
         </div>
-        <div className='service'>
+        <div data-aos='fade-up' className='service'>
         <div className='tool second'>
         <FaTablet />
         </div>
@@ -25,7 +30,7 @@ const Services = () => {
         With great layout skill, I build websites that are adaptive to your device screen. The websites or web app I build accessible websites that look great on any screen. 
         </Typography>
         </div>
-        <div className='service'>
+        <div data-aos='fade-in' className='service'>
         <div className='tool third'>
         <FaTools />
         </div>
@@ -33,7 +38,7 @@ const Services = () => {
         I work on-time and to spec, I pay attention to improve the aesthetics of the site as well as the functionality. I am responsive, and willing to wotk through issues as they arise.
         </Typography>
         </div>
-        <div className='service'>
+        <div data-aos='fade-up' className='service'>
         <div className='tool fourth'>
         <FaTools />
         </div>

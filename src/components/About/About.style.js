@@ -6,7 +6,7 @@ export const useStyle = makeStyles(theme => {
             margin: '5rem 0 0 0',
             height: '400px',
             [theme.breakpoints.down('sm')]: {
-                height: '690px',
+                height: '705px',
                 position: 'relative'
             }
         },

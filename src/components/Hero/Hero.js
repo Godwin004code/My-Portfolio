@@ -9,11 +9,8 @@ import "./Hero.css"
 
 const Hero = () => {
     const classes = useStyle()
-    const [showChat, setShowChat] = useState(false)
-
-    const handleClick = () => {
-        setShowChat(!showChat)
-    }
+    
+  
 
     const web = ["p","o","r","t","f","o","l", "i", "o"]
 
@@ -22,13 +19,13 @@ const Hero = () => {
         <Grid className={classes.hero} item sm={12}>
             <Card className={classes.herotext} style={{backgroundColor: 'transparent', boxShadow: '0 0 0 transparent' }}>
                 <div>
-                <Typography variant='h3' style={{color: 'white'}}>Hola!</Typography>
+                <Typography variant='h3' style={{color: 'white'}}>Hola👋!</Typography>
                 <Typography variant='h2' style={{color: 'white'}}>Welcome to my <span style={{color: '#5090D3', fontFamily: 'cursive'}}>
                 <div style={{display: 'flex'}}> {
                     web.map((item, idx) => {
                         return (
                             
-                            <Typography key={idx} style={{marginRight: 4}} className={'web' + ' ' +  idx}>{item}</Typography>
+                            <Typography key={idx} style={{marginRight: 4, fontSize: 23}} className={'web' + ' ' +  idx}>{item}</Typography>
                            
                         )
                     })
@@ -41,11 +38,13 @@ const Hero = () => {
                     I'm a <div styl={{fontFamily: 'cursive'}} className={classes.typical}>
                         <Typical
                             steps={[
-                                'Front-end Developer',
+                                'Front-end developer',
                                 2000,
                                 'Website maintainer',
                                 2000,
-                                'Enthusiastic developer',
+                                'JavaScript lover',
+                                2000,
+                                'Committed developer',
                                 2000
                             ]}
                             loop={Infinity}
@@ -57,12 +56,7 @@ const Hero = () => {
                 <img src={HeroImage} alt="Hero Image" />
             </div>
         </Grid>
-        <div className={classes.comment}>
-        {showChat && <Contact />}
-      <div onClick={handleClick}  className={classes.commentIcon}>
-      <FaComment  />
-      </div>
-       </div>
+        
     </Grid>
   )
 }
