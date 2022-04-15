@@ -6,11 +6,13 @@ export const useStyle = makeStyles(theme => {
            display: 'flex',
            overflow: 'auto',
            padding: '2rem 0',
-           gap: 10
+          
        },
        project_card: {
            minWidth: '300px',
-           height: '350px'
+           height: '350px',
+           
+           marginLeft: 15
        },
        img1: {
            width: '100%',

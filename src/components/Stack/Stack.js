@@ -4,14 +4,14 @@ import { useStyle } from './Stack.style'
 import { Element } from "react-scroll"
 import { FaHtml5, FaCss3, FaJsSquare, FaReact, FaSass, FaGitAlt } from "react-icons/fa"
 import { SiMaterialui, SiFirebase } from "react-icons/si"
-import "./Stack.css"
+//import "./Stack.css"
 import Aos from "aos"
 import 'aos/dist/aos.css'
 
 const Stack = () => {
   const classes = useStyle()
  
-  useEffect(() => {git 
+  useEffect(() => { 
     Aos.init({duration: 2000})
   },[])
  

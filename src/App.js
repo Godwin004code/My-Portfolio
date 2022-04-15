@@ -20,6 +20,8 @@ const App = () => {
         setShowChat(!showChat)
     }
 
+    
+
   window.onload = () => {
     Swal.fire({
       title: 'Hello boss, Welcome to my portfolio. I hope I get hired by you. Gracias🤲'
