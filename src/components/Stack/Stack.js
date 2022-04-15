@@ -11,14 +11,15 @@ import 'aos/dist/aos.css'
 const Stack = () => {
   const classes = useStyle()
  
-  useEffect(() => {
+  useEffect(() => {git 
     Aos.init({duration: 2000})
   },[])
  
   return (
       <Element name='stack'>
-        <div className={classes.space} />
+       <Typography variant='h3' style={{color: 'white', textAlign: 'center', marginBottom: '2rem'}}>Stack</Typography>
     <Container className={classes.container}>
+      
         <div className={classes.box}>
             <div id='stack' data-aos='fade-in'  style={{color: '#f06529'}}><FaHtml5 /></div>
             <div id='stack'  data-aos='fade-in' style={{color: '#2ba4d9'}}><FaCss3 /></div>
