@@ -58,7 +58,7 @@ const Navbar = () => {
             </nav>
             <div className={classes.icon_container}>
                 <span className={classes.icon}>
-                <a href="https://github.com/Godwin004code/My-Portfolio" style={{color: 'white'}}> <GitHub /></a>
+                <a href="https://github.com/Godwin004code/" style={{color: 'white'}}> <GitHub /></a>
                 </span>
                 <span className={classes.icon}>
                    <a href="https://twitter.com/AlugbinGodwin" style={{color: 'white'}}><Twitter /></a>
