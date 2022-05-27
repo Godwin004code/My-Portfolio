@@ -4,7 +4,7 @@ export const useStyle = makeStyles(theme => {
     return {
         appbar: {
             width: '90%',
-            backgroundColor: '#0A1929',
+            backgroundColor: '#b01100',
             color: 'white',
             display: 'flex',
             justifyContent: 'space-between',

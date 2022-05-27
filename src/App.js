@@ -9,7 +9,7 @@ import Services from './components/Services/Services'
 import Stack from "./components/Stack/Stack"
 import { Element } from "react-scroll"
 import { useStyle } from "./components/Hero/Hero.style"
-import { FaComment } from 'react-icons/fa'
+
 import Swal from "sweetalert2"
 
 const App = () => {
@@ -30,12 +30,7 @@ const App = () => {
   return (
     <>
     <Navbar />
-    <div className={classes.comment}>
-        {showChat && <Contact />}
-        <div onClick={handleClick}  className={classes.commentIcon}>
-       <FaComment  /> 
-      </div> 
-       </div>
+    
     <Hero />
     
     <About />
@@ -44,6 +39,7 @@ const App = () => {
     <Projects />
     </Element>
     <Stack />
+    <Contact />
     <Footer />
     </>
   )

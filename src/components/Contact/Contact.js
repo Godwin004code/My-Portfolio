@@ -41,14 +41,13 @@ const Contact = () => {
             emailjs.sendForm('service_bquzkdk', 'template_j8qjvsl', form.current,'SaKsUWe14ryr1EYV_')
           .then((result) => {
               console.log(result.text);
+              Swal.fire({
+                title: 'I have received your message, Thank You',
+                icon: 'success'
+            })
           }, (error) => {
               console.log(error.text);
           });
-           Swal.fire({
-               title: 'I have received your message, Thank You',
-               icon: 'success'
-           })
-
            setEmail("")
            setMes("")
          }
@@ -59,15 +58,9 @@ const Contact = () => {
     <Element name="contact">
     <Grid container className={classes.grid_container}>
         <div className={classes.text}>
-            <form className={classes.form} ref={form} onSubmit={submitHandler}>
+            <form ref={form} onSubmit={submitHandler}>
                 <div> 
-                { error && <div className={classes.error}>
-                     <p style={{padding: '0 .1rem', fontFamily: 'sans-serif', fontSize: '14px'}}>Input Field is empty
-                     </p>  
-                      
-                    <div className='line'></div>
-                    </div>}
-                    {/* <div onClick={closeForm()}>X</div> */}
+                
                     <Typography variant='h4' style={{textAlign: 'center'}}>Send me mail</Typography>
                    </div>
                    <div>
@@ -88,3 +81,10 @@ const Contact = () => {
 }
 
 export default Contact
+
+// { error && <div className={classes.error}>
+// <p style={{padding: '0 .1rem', fontFamily: 'sans-serif', fontSize: '14px'}}////>Input Field is empty
+//</p>  
+ 
+//<div className='line'></div>
+//</div> 

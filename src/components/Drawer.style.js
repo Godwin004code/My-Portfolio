@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core";
 export const useStyle = makeStyles((theme) => {
     return {
         drawer: {
-            backgroundColor: '#0A1929',
+            backgroundColor: '#b01100',
             width: '400px',
             height: '100%',
             color: 'white',

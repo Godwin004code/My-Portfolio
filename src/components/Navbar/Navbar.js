@@ -34,7 +34,7 @@ const Navbar = () => {
     {
         id === 'show-nav' ? (
             isMatch ? (
-               <AppBar style={{backgroundColor: '#0A1929'}}>
+               <AppBar style={{backgroundColor: '#b01100'}}>
                 <header className={classes.header}>
                     <Typography variant='h4' className={classes.h4}>go
                     <span style={{color: '#6F7E8C'}}>dw</span>in</Typography>
@@ -42,7 +42,7 @@ const Navbar = () => {
                 </header>
                </AppBar>
             ) : (
-                <AppBar style={{backgroundColor: '#0A1929'}}>
+                <AppBar style={{backgroundColor: '#b01100'}}>
         <header className={classes.appbar}>
             <Typography variant='h4'>godwin</Typography>
             <nav>
@@ -74,7 +74,7 @@ const Navbar = () => {
     </AppBar>
             )
         ) : (
-            <AppBar className='app' style={{background:'#0a1929'}}>
+            <AppBar className='app' style={{background:'#b01100'}}>
                 <header id='appbar' className={classes.appbar} >
                 <Typography variant='h6'>Dev Godwin</Typography>
                 <Typography style={{marginTop: 6}}>{time}</Typography>
