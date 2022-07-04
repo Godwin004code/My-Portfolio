@@ -4,7 +4,7 @@ import Image3 from "../../Assets/Screenshot 2022-04-09 204900.png"
 import Image4 from "../../Assets/Screenshot 2022-04-11 145310.png"
 import Image5 from "../../Assets/Screensht 2022-04-11 145729.png"
 import Image6 from "../../Assets/Screenshot 2022-04-13 032228.png"
-//import Image8 from "../../Assets/Screenshot 2022-04-13 052702.png"
+import Image8 from "../../Assets/Screenshot 2022-07-04 062900.png"
 
 export const ProjectStack = [
     {
@@ -25,7 +25,7 @@ export const ProjectStack = [
     },
     {
         id: 3,
-        img: Image3,
+        img: Image8,
         stack: 'Next.js & Strapi',
         net: "https://devilon.online",
         git: "https://github.com/personal-blog",
