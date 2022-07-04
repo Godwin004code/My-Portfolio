@@ -59,11 +59,12 @@ const Contact = () => {
   return (
       <Grid container className={classes.grid_container}>
         <div className={classes.text}>
-          <h2 style={{color: 'white'}}>Let's discuss about your project</h2>
+          
           <form ref={form} onSubmit={submitHandler}>
             <div>
               <Typography variant="h4" style={{ textAlign: "center" }}>
                 Send me mail
+                <h6 style={{color: 'white'}}>Let's discuss about your project</h6>
               </Typography>
             </div>
             <div>
