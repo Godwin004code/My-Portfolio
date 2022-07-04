@@ -4,10 +4,14 @@ export const useStyle = makeStyles(theme => {
     return {
        projects_container: {
            display: 'flex',
-           flexDirection: 'column',
-           //overflow: 'auto',
+           
+           overflow: 'auto',
            padding: '2rem 0',
            margin: '0rem 0rem 5rem 0',
+           [theme.breakpoints.down('sm')]: {
+            flexDirection: 'column',
+            overflow: 'hidden'
+        },
           
        },
        project_card: {
