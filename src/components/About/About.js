@@ -1,16 +1,14 @@
 import { Card, Typography, Grid } from '@material-ui/core'
 import React from 'react'
 import { useStyle } from './About.style'
-import { Element } from "react-scroll"
+
 import "./About.css"
-import Stack from '../Stack/Stack'
 import { FaHtml5, FaCss3, FaJsSquare, FaReact, FaSass, FaGit } from "react-icons/fa"
 
 const About = () => {
   const classes = useStyle()
   return (
     <>
-    <Element name='about'>
     <Card className={classes.about_container} style={{opacity: '.6', color: 'rgba(0, 30, 60,1)', borderRadius: '0',  }}>
         <Typography variant='h3' style={{textAlign: 'center', paddingBottom: 30 }}>About Me</Typography>
         <Grid className={classes.container}>
@@ -33,7 +31,7 @@ const About = () => {
             </Typography>
             <Typography variant='body1' style={{textAlign: 'center', marginBottom: 8}}>
 
-          I develop websites with HTML, CSS and JavaScript but now I use React in combination with Material UI.
+          I develop websites with HTML, CSS and JavaScript but now I mostly use Next.js .
           </Typography>
           <Typography variant='body1' style={{textAlign: 'center'}}>
 
@@ -46,7 +44,6 @@ const About = () => {
        
     </Card>
  
-    </Element>
     </>
   )
 }

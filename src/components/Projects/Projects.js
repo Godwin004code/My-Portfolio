@@ -39,7 +39,7 @@ const Projects = () => {
                       color: "white",
                       textAlign: "center",
                       padding: ".5rem 0",
-                      fontSize: "20px",
+                      fontSize: "16px",
                     }}>
                   <Typography
                     variant="paragraph"

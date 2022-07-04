@@ -1,7 +1,7 @@
 import { Button, Grid, TextField, Typography } from "@material-ui/core";
 import React, { useState, useRef } from "react";
 import { useStyle } from "./Contact.style";
-import { Element } from "react-scroll";
+
 import "../../index.css";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
@@ -57,9 +57,9 @@ const Contact = () => {
     }
   };
   return (
-    <Element name="contact">
       <Grid container className={classes.grid_container}>
         <div className={classes.text}>
+          <h2 style={{color: 'white'}}>Let's discuss about your project</h2>
           <form ref={form} onSubmit={submitHandler}>
             <div>
               <Typography variant="h4" style={{ textAlign: "center" }}>
@@ -96,7 +96,6 @@ const Contact = () => {
           </form>
         </div>
       </Grid>
-    </Element>
   );
 };
 
