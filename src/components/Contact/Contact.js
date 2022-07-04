@@ -62,7 +62,7 @@ const Contact = () => {
           
           <form ref={form} onSubmit={submitHandler}>
             <div>
-              <Typography variant="h4" style={{ textAlign: "center" }}>
+              <Typography variant="h4" style={{color: 'white', textAlign: "center" }}>
                 Send me mail
                 <h6 style={{margin: '.5rem 0'}}>Let's discuss about your project</h6>
               </Typography>

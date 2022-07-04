@@ -13,7 +13,7 @@ export const useStyle = makeStyles((theme) => {
     },
     grid_container: {
       width: "100%",
-      backgroundColor: "#b01100",
+     
       display: "flex",
       justifyContent: "center",
       padding: "30px 0",
