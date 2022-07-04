@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core";
 export const useStyle = makeStyles(theme => {
     return {
         hero_container: {
-            margin: '6rem auto 0 auto',
+            margin: '2rem auto 5rem auto',
             width: '90%',
             
         },

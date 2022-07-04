@@ -4,21 +4,21 @@ import Image3 from "../../Assets/Screenshot 2022-04-09 204900.png"
 import Image4 from "../../Assets/Screenshot 2022-04-11 145310.png"
 import Image5 from "../../Assets/Screensht 2022-04-11 145729.png"
 import Image6 from "../../Assets/Screenshot 2022-04-13 032228.png"
-import Image8 from "../../Assets/Screenshot 2022-04-13 052702.png"
+//import Image8 from "../../Assets/Screenshot 2022-04-13 052702.png"
 
 export const ProjectStack = [
     {
         id: 1,
         img: Image,
-        title: 'React & Material UI',
+        stack: 'React & Material UI',
         net: "https://godwinme.netlify.app",
         git: "https://github.com/Godwin004code/My-Portfolio",
-        des: 'My first portfolio website'
+        des: 'My portfolio website, built with React.js, email.js for sending me message that will deliver in my inbox.'
     },
     {
         id: 2,
         img: Image2,
-        title: 'HTML, CSS & JS',
+        stack: 'HTML, CSS & JS',
         net: "https://godwin-messenger.netlify.app/",
         git: "https://github.com/Godwin004code/godwin-messenger",
         des: 'A messenger website I made sometimes ago while testing how to use SMTP js'
@@ -26,37 +26,34 @@ export const ProjectStack = [
     {
         id: 3,
         img: Image3,
-        title: 'HTML, CSS & JavaScript',
-        net: "",
-        git: "https://github.com/Godwin004code/quote-gen",
-        
+        stack: 'Next.js & Strapi',
+        net: "https://devilon.online",
+        git: "https://github.com/personal-blog",
+        des: "A full stack blog made with Next.js(Front-end), Strapi(backend) and Cloudinary for picture hosting. It's a progressive web app, though service workers is not currently supported by iOS. The notification is powered with one signal API."
     },
     {
         id: 4,
-        img: Image4,
-        title: 'React & Firebase',
+        img: Image3,
+        stack: 'HTML, CSS & JavaScript',
         net: "https://react-firebase.netlify.app",
-        git: "https://github.com/Godwin004code/React-firebase-todoapp"
+        git: "https://github.com/Godwin004code/quote-gen",
+        des: "Quote generator made with Vanilla JS where you decide to get the number of quotes you want and it will be generated. You get the quote and the author's name plus a befitting picture."
     },
     {
         id: 5,
         img: Image5,
-        title: 'React & SCSS(PWA)',
+        stack: 'React & SCSS',
         net: "https://sharper.netlify.app",
-        git: "https://github.com/Godwin004code/Cloubayy"
+        git: "https://github.com/Godwin004code/Cloubayy",
+        des: 'A progressive web app where you search for different picture titles and get your result, I implemented pixabay API for the pictures.'
     },
     {
         id: 6,
         img: Image6,
-        title: 'React & MUI',
+        stack: 'React & MUI',
         net: "https://fasterr.netlify.app",
-        git: "https://github.com/Godwin004code/Landing-page"
+        git: "https://github.com/Godwin004code/Landing-page",
+        des: ''
     },
-    {
-        id: 7,
-        img: Image8,
-        title: 'React & CSS',
-        net: "https://slickapp.netlify.app",
-        git: "https://github.com/Godwin004code/Movie-search-app"
-    },
+  
 ]

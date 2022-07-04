@@ -4,15 +4,16 @@ export const useStyle = makeStyles(theme => {
     return {
        projects_container: {
            display: 'flex',
-           overflow: 'auto',
+           flexDirection: 'column',
+           //overflow: 'auto',
            padding: '2rem 0',
+           margin: '0rem 0rem 5rem 0',
           
        },
        project_card: {
            minWidth: '300px',
-           height: '350px',
-           
-           marginLeft: 15
+           //height: '420px',
+           margin: 15
        },
        img1: {
            width: '100%',

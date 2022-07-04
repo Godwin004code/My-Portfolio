@@ -1,0 +1,33 @@
+<span className={classes.icon}>
+                  <a
+                    href="https://github.com/Godwin004code/"
+                    style={{ color: "white" }}
+                  >
+                    {" "}
+                    <GitHub />
+                  </a>
+                </span>
+                <span className={classes.icon}>
+                  <a
+                    href="https://twitter.com/AlugbinGodwin"
+                    style={{ color: "white" }}
+                  >
+                    <Twitter />
+                  </a>
+                </span>
+                <span className={classes.icon}>
+                  <a
+                    href="https://www.linkedin.com/in/godwin-alugbin-b705b6227/"
+                    style={{ color: "white" }}
+                  >
+                    <LinkedIn />
+                  </a>
+                </span>
+                <span className={classes.icon}>
+                  <a
+                    href="https://www.facebook.com/profile.phpid=100010017672086"
+                    style={{ color: "white" }}
+                  >
+                    <Facebook />
+                  </a>
+                </span>

@@ -1,0 +1,57 @@
+
+.app-navigator {
+    width: 40%;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 0%;
+    left: 20%;
+    right: 20%;
+    background-color: #b01100;
+    border-radius: 30px 30px 0px 0px;
+}
+.app-navigator ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.app-navigator li {
+    list-style: none;
+    font-size: 40px;
+    padding: 20px;
+}
+.app-navigator a {
+    color: white;
+}
+.active-link {
+    background-color: rgb(0, 30, 60);
+}
+.active-link.home{
+    border-radius: 30px 0px 0px 0px;
+}
+.active-link.contact {
+    border-radius: 0px 30px 0px 0px;
+}
+
+.remove-link a {
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .app-navigator {
+        width: 70%;
+        left: 0;
+        right: 0;
+
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .app-navigator {
+        width: 100%;
+        left: 0;
+        right: 0;
+    }
+    .app-navigator li {
+        font-size: 25px;
+    }
+}

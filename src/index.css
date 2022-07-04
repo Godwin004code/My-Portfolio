@@ -11,7 +11,7 @@ html:root {
     --docsearch-searchbox-focus-background: unset;
     --docsearch-footer-background: unset;
     --docsearch-modal-background: #0A1929;
-} 
+}
 
 @font-face {
     font-family: 'Montserrat';
@@ -27,19 +27,21 @@ html:root {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-}  
+}
+
 body {
     background-color: rgb(0, 30, 60);
     width: 100%;
     overflow-x: hidden;
-    
+
 }
 
 #hide::-webkit-scrollbar {
     width: 0;
 }
 
-input, button {
+input,
+button {
     font-family: 'Montaga';
 }
 
@@ -54,6 +56,7 @@ input, button {
     transform-origin: left;
     margin-top: 10px;
 }
+
 @keyframes line {
     0% {
         transform: scaleX(0);
@@ -64,3 +67,17 @@ input, button {
     font-family: 'Montserrat';
 }
 
+
+.blog-link {
+    border: 1px solid white;
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: all 100ms ease;
+}
+
+.blog-link:hover {
+    background-color: white;
+    color: #b01100;
+}

@@ -1,18 +1,13 @@
-import { Card, Container, Grid, Typography } from '@material-ui/core'
-import React, { useState } from 'react'
+import { Card, Grid, Typography } from '@material-ui/core'
+
 import { useStyle } from './Hero.style'
 import HeroImage from "../../Assets/IMG-20211216-WA0001.jpg"
 import Typical from "react-typical"
-import { FaComment } from "react-icons/fa"
-import Contact from '../Contact/Contact'
+
 import "./Hero.css"
 
 const Hero = () => {
     const classes = useStyle()
-    
-  
-
-    const web = ["p","o","r","t","f","o","l", "i", "o"]
 
   return (
     <Grid container className={classes.hero_container}>
@@ -20,18 +15,7 @@ const Hero = () => {
             <Card className={classes.herotext} style={{backgroundColor: 'transparent', boxShadow: '0 0 0 transparent' }}>
                 <div>
                 <Typography variant='h3' style={{color: 'white'}}>Hola👋!</Typography>
-                <Typography variant='h2' style={{color: 'white'}}>Welcome to my <span style={{color: '#5090D3', fontFamily: 'cursive'}}>
-                <div style={{display: 'flex'}}> {
-                    web.map((item, idx) => {
-                        return (
-                            
-                            <Typography variant='h2' key={idx} style={{marginRight: 4}} className={'web' + ' ' +  idx}>{item}</Typography>
-                           
-                        )
-                    })
-                   
-                }
-                 </div>
+                <Typography variant='h2' style={{color: 'white'}}>Welcome to my <span style={{color: '#5090D3', fontFamily: 'cursive'}}>Portfolio
                     </span> </Typography>
                 </div>
                 <Typography variant='h6' style={{color: 'white'}}>
@@ -44,7 +28,7 @@ const Hero = () => {
                                 2000,
                                 'JavaScript lover',
                                 2000,
-                                'Committed developer',
+                                'Tech Writer',
                                 2000
                             ]}
                             loop={Infinity}
