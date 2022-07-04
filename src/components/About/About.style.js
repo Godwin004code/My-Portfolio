@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core";
 export const useStyle = makeStyles(theme => {
     return {
         about_container: {
-            margin: '5rem 0 0 0',
+            margin: '2rem 0 0 0',
             height: '430px',
             [theme.breakpoints.down('sm')]: {
                 height: '705px',

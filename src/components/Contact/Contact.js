@@ -64,7 +64,7 @@ const Contact = () => {
             <div>
               <Typography variant="h4" style={{ textAlign: "center" }}>
                 Send me mail
-                <h6 style={{color: 'white'}}>Let's discuss about your project</h6>
+                <h6 style={{margin: '.5rem 0'}}>Let's discuss about your project</h6>
               </Typography>
             </div>
             <div>

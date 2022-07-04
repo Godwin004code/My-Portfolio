@@ -1,7 +1,7 @@
 import Image from "../../Assets/unique.png"
 import Image2 from "../../Assets/mes.png" 
 import Image3 from "../../Assets/Screenshot 2022-04-09 204900.png" 
-import Image4 from "../../Assets/Screenshot 2022-04-11 145310.png"
+import Image7 from "../../Assets/Screenshot 2022-07-04 064520.png"
 import Image5 from "../../Assets/Screensht 2022-04-11 145729.png"
 import Image6 from "../../Assets/Screenshot 2022-04-13 032228.png"
 import Image8 from "../../Assets/Screenshot 2022-07-04 062900.png"
@@ -35,7 +35,7 @@ export const ProjectStack = [
         id: 4,
         img: Image3,
         stack: 'HTML, CSS & JavaScript',
-        net: "https://react-firebase.netlify.app",
+        net: "https://c2t-quote-generator.netlify.app",
         git: "https://github.com/Godwin004code/quote-gen",
         des: "Quote generator made with Vanilla JS where you decide to get the number of quotes you want and it will be generated. You get the quote and the author's name plus a befitting picture."
     },
@@ -53,7 +53,15 @@ export const ProjectStack = [
         stack: 'React & MUI',
         net: "https://fasterr.netlify.app",
         git: "https://github.com/Godwin004code/Landing-page",
-        des: ''
+        des: 'I implemented a design I saw online, all pages and links are working. I designed the login and signup myself.'
+    },
+    {
+        id: 7,
+        img: Image7,
+        stack: 'HTML,CSS & JavaScript',
+        net: "https://stutern-page.netlify.app/",
+        git: "https://github.com/Godwin004code/Landing-page",
+        des: 'I cloned Stutern home page in this project. Nothing crazy here'
     },
   
 ]
