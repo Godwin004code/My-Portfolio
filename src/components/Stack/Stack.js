@@ -3,7 +3,7 @@ import { Container, Typography} from "@material-ui/core"
 import { useStyle } from './Stack.style'
 import { Element } from "react-scroll"
 import { FaHtml5, FaCss3, FaJsSquare, FaReact, FaSass, FaGitAlt } from "react-icons/fa"
-import { SiMaterialui, SiFirebase, SiTailwindcss, SiNextdotjs } from "react-icons/si"
+import { SiMaterialui, SiFirebase, SiTailwindcss, SiNextdotjs, SiVuedotjs } from "react-icons/si"
 //import "./Stack.css"
 import Aos from "aos"
 import 'aos/dist/aos.css'
@@ -28,13 +28,13 @@ const Stack = () => {
             <div id='stack' data-aos='fade-in'  style={{color: '#efd81d'}}><FaJsSquare /></div>
             <div id='stack' data-aos='fade-in'  style={{color: '#5ed4f4'}}><FaReact /></div>
             <div id='stack' data-aos='fade-in'  style={{color: '#000'}}><SiNextdotjs /></div>
+            <div id='stack' data-aos='fade-in'  style={{color: '#42b883'}}><SiVuedotjs /></div>
             <div id='stack' data-aos='fade-in' style={{color: 'blue'}}><SiMaterialui /></div>
             <div id='stack' data-aos='fade-in' style={{color: '#5ed4f4'}}><SiTailwindcss /></div>
             <div id='stack' data-aos='fade-in'  style={{color: '#ffca28'}}><SiFirebase /></div>
             <div id='stack' data-aos='fade-in' style={{color: '#f1502f'}}><FaGitAlt /></div>
             
         </div>
-   
     </div>
     </Element>
   )

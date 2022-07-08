@@ -5,6 +5,7 @@ import Image7 from "../../Assets/Screenshot 2022-07-04 064520.png"
 import Image5 from "../../Assets/Screensht 2022-04-11 145729.png"
 import Image6 from "../../Assets/Screenshot 2022-04-13 032228.png"
 import Image8 from "../../Assets/Screenshot 2022-07-04 062900.png"
+import Image9 from "../../Assets/Screenshot 2022-07-08 123138.png"
 
 export const ProjectStack = [
     {
@@ -62,6 +63,14 @@ export const ProjectStack = [
         net: "https://stutern-page.netlify.app/",
         git: "https://github.com/Godwin004code/Landing-page",
         des: 'I cloned Stutern home page in this project. Nothing crazy here'
+    },
+    {
+        id: 8,
+        img: Image9,
+        stack: 'Vue.js, TailwindCSS',
+        net: "https://stutern-page.netlify.app/",
+        git: "https://github.com/Godwin004code/Landing-page",
+        des: 'This is a real estate website where you can order,sell and so on. Still under building.'
     },
   
 ]

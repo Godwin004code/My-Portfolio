@@ -37,7 +37,12 @@ body {
 }
 
 #hide::-webkit-scrollbar {
-    width: 0;
+    background-color: red;
+    height: 5px;
+}
+#hide::-webkit-scrollbar-thumb {
+    background-color: #0A1929;
+    height: 5px;
 }
 
 input,
@@ -55,7 +60,6 @@ button {
     animation-iteration-count: infinite;
     transform-origin: left;
     margin-top: 10px;
-
 }
 
 @keyframes line {

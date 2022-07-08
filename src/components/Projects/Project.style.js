@@ -6,18 +6,19 @@ export const useStyle = makeStyles(theme => {
            display: 'flex',
            
            overflow: 'auto',
-           padding: '2rem 0',
-           margin: '0rem 0rem 5rem 0',
+           padding: '2rem 0 1rem 0',
+           margin: '0rem 0rem 8rem 0',
            [theme.breakpoints.down('sm')]: {
             flexDirection: 'column',
-            overflow: 'hidden'
+           // overflow: 'hidden'
         },
           
        },
        project_card: {
            minWidth: '300px',
            //height: '420px',
-           margin: 15
+           margin: 15,
+           marginBottom: 0
        },
        img1: {
            width: '100%',
