@@ -6,10 +6,12 @@ export const useStyle = makeStyles((theme) => {
       border: '1px solid white',
       borderRadius: "5px",
       margin: "1.5rem 0 1rem 0",
+      color: 'white',
+      
       [theme.breakpoints.down("sm")]: {
         width: "100%",
       },
-      zIndex: 2000000000,
+      
     },
     grid_container: {
       width: "100%",

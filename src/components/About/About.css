@@ -12,6 +12,7 @@
     overflow: hidden;
     top: 0;
     right: 0;
+    margin-bottom: 12;
 }
 .cubespinner {
     animation-name: spincube;

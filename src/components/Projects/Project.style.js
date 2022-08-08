@@ -10,7 +10,7 @@ export const useStyle = makeStyles(theme => {
            margin: '0rem 0rem 8rem 0',
            [theme.breakpoints.down('sm')]: {
             flexDirection: 'column',
-           // overflow: 'hidden'
+            overflow: 'hidden'
         },
           
        },

@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core"
 export const useStyle = makeStyles((theme) => {
     return {
         div: {
-            background: 'white',
+            background: '#f6f6f9',
             display: 'flex',
             flexDirection: 'column',
             width: '100%'
