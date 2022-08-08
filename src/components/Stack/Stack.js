@@ -18,7 +18,7 @@ const Stack = () => {
   return (
       <Element name='stack'>
         <div className={classes.div} styles={{width: '100%'}}>
-       <Typography variant='h3' style={{color: 'white', textAlign: 'center', marginBottom: '2rem'}}>Stack</Typography>
+       <Typography variant='h3' style={{color: '#0A1929', textAlign: 'center', marginBottom: '2rem'}}>Stack</Typography>
     
       
         <div className={classes.box}>
@@ -31,7 +31,7 @@ const Stack = () => {
             <div id='stack' data-aos='fade-in'  style={{color: '#42b883'}}><SiVuedotjs /></div>
             <div id='stack' data-aos='fade-in' style={{color: 'blue'}}><SiMaterialui /></div>
             <div id='stack' data-aos='fade-in' style={{color: '#5ed4f4'}}><SiTailwindcss /></div>
-            <div id='stack' data-aos='fade-in'  style={{color: '#ffca28'}}><SiFirebase /></div>
+            
             <div id='stack' data-aos='fade-in' style={{color: '#f1502f'}}><FaGitAlt /></div>
             
         </div>

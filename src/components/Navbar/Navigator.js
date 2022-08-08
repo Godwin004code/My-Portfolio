@@ -40,7 +40,9 @@ const AppNavigator = () => {
             </li>
             <li className={location.pathname === '/contact' ? 'active-link contact' : 'remove-link'}>
             <Tooltip title='Contact'>
-            <NavLink to='/contact'><AiOutlinePhone /></NavLink>
+            <NavLink to='/contact'>
+            <AiOutlinePhone />
+            </NavLink>
             </Tooltip>
             </li>
         </ul>

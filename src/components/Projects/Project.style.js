@@ -15,10 +15,10 @@ export const useStyle = makeStyles(theme => {
           
        },
        project_card: {
-           minWidth: '300px',
+           minWidth: '350px',
            //height: '420px',
            margin: 15,
-           marginBottom: 0
+           marginBottom: 30
        },
        img1: {
            width: '100%',

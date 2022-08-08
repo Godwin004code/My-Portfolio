@@ -1,6 +1,6 @@
 import { Card, Typography,Tooltip } from "@material-ui/core";
 import React from "react";
-import Overflow, { ProjectStack } from "./Overflow";
+import  { ProjectStack } from "./Overflow";
 import { useStyle } from "./Project.style";
 import "../../index.css";
 import { GitHub } from "@material-ui/icons";
@@ -43,7 +43,7 @@ const Projects = () => {
                     }}>
                   <Typography
                     variant="paragraph"
-                    style={{padding: '0 10px'}}
+                    style={{padding: '0 10px', fontSize: 15}}
                   >
                     {item.des}
                   </Typography>

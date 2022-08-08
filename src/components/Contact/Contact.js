@@ -89,6 +89,7 @@ const Contact = () => {
                 name="mes"
                 value={mes}
                 onChange={mesHandler}
+                inputProps={{style: {color: 'white'}}}
               />
             </div>
             <Button type="submit" variant="outlined" className={classes.btn}>

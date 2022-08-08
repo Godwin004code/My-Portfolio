@@ -9,7 +9,7 @@ const About = () => {
   const classes = useStyle()
   return (
     <>
-    <Card className={classes.about_container} style={{opacity: '.6', color: 'rgba(0, 30, 60,1)', borderRadius: '0',  }}>
+    <Card id='about-container' className={classes.about_container} style={{opacity: '.6', color: 'rgba(0, 30, 60,1)', borderRadius: '0',  }}>
         <Typography variant='h3' style={{textAlign: 'center', paddingBottom: 30 }}>About Me</Typography>
         <Grid className={classes.container}>
         <Grid className={classes.spin}>
@@ -25,7 +25,7 @@ const About = () => {
           </div>
         </Grid>
           <Grid className={classes.body}>
-            <Typography variant='body1' style={{textAlign: 'center', marginBottom: 8}} >
+            <Typography variant='body1' className='body1' style={{textAlign: 'center', marginBottom: 8}} >
 
             I'm <span>Alugbin Boluwatife Godwin</span>, a front-end developer, I am passionate about using my little skills to create delightful experiences. I'm currently studying Computer Science at University of Ibadan.
             </Typography>

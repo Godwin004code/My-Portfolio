@@ -3,9 +3,9 @@ import { makeStyles } from "@material-ui/core";
 export const useStyle = makeStyles((theme) => {
   return {
     input: {
-      // backgroundColor: '#6F7E8C',
+      border: '1px solid white',
       borderRadius: "5px",
-      margin: "0 0 1rem 0",
+      margin: "1.5rem 0 1rem 0",
       [theme.breakpoints.down("sm")]: {
         width: "100%",
       },
