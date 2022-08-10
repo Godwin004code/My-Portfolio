@@ -58,7 +58,7 @@ h2 {
 @media only screen and (max-width: 960px) {
     .service-container {
         flex-direction: column;
-        margin-bottom: 0rem;
+        
     }
     .service-container .service {
         width: 80%;

@@ -22,7 +22,7 @@ export const useStyle = makeStyles(theme => {
            [theme.breakpoints.down('sm')]: {
             width: '85%',
             margin: '0 auto',
-            marginBottom: 13
+            marginBottom: 20
         },
        },
        img1: {
