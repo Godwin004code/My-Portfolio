@@ -31,9 +31,10 @@ const Projects = () => {
                 
                 <Typography
                   variant="h6"
-                  style={{ textAlign: "center", color: "white" }}
+                  style={{ textAlign: "center", color: "white", fontSize: 25 }}
+                  
                 >
-                  {item.stack}
+                  {item.stack1}  {item.stack2}  {item.stack3}
                 </Typography>
                 <div  style={{
                       color: "white",
@@ -46,6 +47,7 @@ const Projects = () => {
                     style={{padding: '0 10px', fontSize: 15}}
                   >
                     {item.des}
+
                   </Typography>
                 </div>
                 <div className={classes.icons}>

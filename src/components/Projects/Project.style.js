@@ -18,7 +18,10 @@ export const useStyle = makeStyles(theme => {
            minWidth: '350px',
            //height: '420px',
            margin: 15,
-           marginBottom: 30
+           marginBottom: 30,
+           [theme.breakpoints.down('sm')]: {
+            width: '90%'
+        },
        },
        img1: {
            width: '100%',

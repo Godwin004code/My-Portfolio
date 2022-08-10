@@ -22,14 +22,14 @@ const Stack = () => {
     
       
         <div className={classes.box}>
-            <div id='stack' data-aos='fade-in'  style={{color: '#f06529'}}><FaHtml5 /></div>
-            <div id='stack'  data-aos='fade-in' style={{color: '#2ba4d9'}}><FaCss3 /></div>
-            <div id='stack' data-aos='fade-in' style={{color: '#c69'}}><FaSass /></div>
-            <div id='stack' data-aos='fade-in'  style={{color: '#efd81d'}}><FaJsSquare /></div>
-            <div id='stack' data-aos='fade-in'  style={{color: '#5ed4f4'}}><FaReact /></div>
-            <div id='stack' data-aos='fade-in'  style={{color: '#000'}}><SiNextdotjs /></div>
+            <div id='stack' data-aos='fade-in'  ><FaHtml5 style={{color: '#f06529'}} /></div>
+            <div id='stack'  data-aos='fade-in' ><FaCss3 style={{color: '#2ba4d9'}} /></div>
+            <div id='stack' data-aos='fade-in' ><FaSass style={{color: '#c69'}} /></div>
+            <div id='stack' data-aos='fade-in'><FaJsSquare style={{color: '#efd81d'}} /></div>
+            <div id='stack' data-aos='fade-in'  ><FaReact style={{color: '#5ed4f4'}} /></div>
+            <div id='stack' data-aos='fade-in'  ><SiNextdotjs style={{color: '#000'}} /></div>
             <div id='stack' data-aos='fade-in'  style={{color: '#42b883'}}><SiVuedotjs /></div>
-            <div id='stack' data-aos='fade-in' style={{color: 'blue'}}><SiMaterialui /></div>
+            <div id='stack' data-aos='fade-in' ><SiMaterialui style={{color: 'blue'}} /></div>
             <div id='stack' data-aos='fade-in' style={{color: '#5ed4f4'}}><SiTailwindcss /></div>
             
             <div id='stack' data-aos='fade-in' style={{color: '#f1502f'}}><FaGitAlt /></div>

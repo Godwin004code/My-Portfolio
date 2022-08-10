@@ -22,13 +22,13 @@ const Hero = () => {
                     I'm a <div styl={{fontFamily: 'cursive'}} className={classes.typical}>
                         <Typical
                             steps={[
-                                'Front-end developer',
+                                'Front-end developer🔥',
                                 2000,
-                                'Website maintainer',
+                                'Website maintainer💪',
                                 2000,
-                                'JavaScript lover',
+                                'JavaScript lover😍',
                                 2000,
-                                'Tech Writer',
+                                'Tech Writer😯',
                                 2000
                             ]}
                             loop={Infinity}
