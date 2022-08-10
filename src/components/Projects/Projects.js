@@ -44,7 +44,7 @@ const Projects = () => {
                     }}>
                   <Typography
                     variant="paragraph"
-                    style={{padding: '0 10px', fontSize: 15}}
+                    style={{padding: '0 15px', fontSize: 15}}
                   >
                     {item.des}
 
