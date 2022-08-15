@@ -81,8 +81,8 @@ export const ProjectStack = [
         img: Image9,
         stack1: <SiVuedotjs style={{color: '#42b883'}} />,
         stack2: <SiTailwindcss style={{color: '#5ed4f4'}} />,
-        net: "https://stutern-page.netlify.app/",
-        git: "https://github.com/Godwin004code/Landing-page",
+        net: "https://resilien.netlify.app/user/dashboard",
+        git: "https://github.com/LordRahl90/realdot-customers",
         des: 'This is a real estate website where you can order,sell and so on. Still under building.'
     },
   
