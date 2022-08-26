@@ -4,7 +4,6 @@
     animation-duration: 2000ms;
     animation-iteration-count: infinite;
     transform-origin: center;
-
 }
 
 #stack:nth-child(1) {
